@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SorrisoOdonto | Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-badge"></div>
+        <div style="font-weight:900;">SorrisoOdonto</div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p>Entre em contato com nossa clínica para agendar sua consulta ou esclarecer dúvidas.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/5545991002660?text=Olá! Quero agendar uma consulta" target="_blank">+55 45 99100-2660</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Telefone</h3>
+          <p>(45) 3333-4444</p>
+        </div>
+        <div class="contact-card">
+          <h3>E-mail</h3>
+          <p><a href="mailto:contato@sorriso.odonto.com.br">contato@sorriso.odonto.com.br</a></p>
+        </div>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Rua%20Exemplo%20das%20Flores%20123%20Curitiba%20PR&output=embed"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="cta-wrapper">
+        <a class="btn primary" href="https://wa.me/5545991002660?text=Olá! Quero agendar minha consulta" target="_blank">Agende sua Consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATSAPP FIXO -->
+  <a id="whatsappFloat" href="https://wa.me/5545991002660?text=Olá! Quero agendar uma consulta" target="_blank">WhatsApp</a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth'});
+      });
+    });
+
+    // Hamburger mobile
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Fecha menu ao clicar em algum link
+    document.querySelectorAll(".nav-links li a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+
+    console.log("SorrisoOdonto: contato.html carregado!");
+  </script>
+
+</body>
+</html>
