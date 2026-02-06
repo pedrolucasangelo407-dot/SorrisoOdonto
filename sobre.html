@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre a Clínica | SorrisoOdonto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+
+    <div class="logo">
+      <img src="images/sala.vazia.png" alt="SorrisoOdonto">
+      <span>SorrisoOdonto</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html" class="active">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Sobre a SorrisoOdonto</h1>
+    <p>Cuidado odontológico com foco em confiança, conforto e resultados reais.</p>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="section">
+  <div class="container grid grid--cards">
+
+    <div class="card">
+      <h2>Nossa história</h2>
+      <p>
+        A SorrisoOdonto nasceu com o propósito de oferecer tratamentos
+        odontológicos completos, unindo tecnologia, experiência e um
+        atendimento humano.
+      </p>
+      <p>
+        Cada detalhe foi pensado para que o paciente se sinta seguro,
+        bem atendido e confiante desde o primeiro contato.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/cadeira.odonto.png" alt="Estrutura da clínica">
+    </div>
+
+  </div>
+</section>
+
+<!-- AMBIENTE -->
+<section class="section">
+  <div class="container grid grid--cards">
+
+    <div class="card">
+      <img src="images/sala.vazia.png" alt="Ambiente da clínica">
+    </div>
+
+    <div class="card">
+      <h2>Estrutura moderna</h2>
+      <p>
+        Nossa clínica conta com equipamentos modernos e um ambiente
+        planejado para proporcionar conforto e tranquilidade durante
+        todo o atendimento.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="section">
+  <div class="container">
+    <h2>Nossa equipe</h2>
+
+    <div class="grid grid--cards">
+      <div class="card">
+        <img src="images/equipe.png" alt="Equipe SorrisoOdonto">
+        <p>
+          Profissionais qualificados, atualizados e comprometidos
+          com a excelência em cada atendimento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES -->
+<section class="section">
+  <div class="container">
+    <h2>O que nossos pacientes dizem</h2>
+
+    <div class="grid grid--cards">
+      <div class="card">
+        <img src="images/paciente.satisfeita.png" alt="Paciente satisfeita">
+        <p>
+          “Atendimento excelente, ambiente confortável e profissionais
+          muito atenciosos. Recomendo!”
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="images/paciente.sorrindo.png" alt="Paciente sorrindo">
+        <p>
+          “Me senti seguro desde a primeira consulta. Resultado
+          superou minhas expectativas.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section">
+  <div class="container">
+    <h2>Pronto para cuidar do seu sorriso?</h2>
+    <a class="btn" href="contato.html">Agendar consulta</a>
+  </div>
+</section>
+
+</main>
+
+<a class="whatsapp-float"
+   href="https://wa.me/5545991002660"
+   target="_blank">
+  WhatsApp
+</a>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
