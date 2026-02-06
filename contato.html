@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato | SorrisoOdonto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+
+    <div class="logo">
+      <img src="images/sala.vazia.png" alt="SorrisoOdonto">
+      <span>SorrisoOdonto</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Entre em contato</h1>
+    <p>Estamos prontos para atender você e tirar todas as suas dúvidas.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container grid grid--cards">
+
+    <div class="card">
+      <h3>Agendamento rápido</h3>
+      <p>
+        Fale diretamente com nossa equipe pelo WhatsApp e
+        agende sua consulta sem burocracia.
+      </p>
+      <a class="btn" href="https://wa.me/5545991002660" target="_blank">
+        Chamar no WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Localização</h3>
+      <p>Confira onde estamos localizados e venha nos visitar.</p>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=clinica+odontologica&output=embed"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<a class="whatsapp-float"
+   href="https://wa.me/5545991002660"
+   target="_blank">
+  WhatsApp
+</a>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
