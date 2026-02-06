@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>SorrisoOdonto | Clínica Odontológica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER FIXO -->
+<header class="header">
+  <div class="container header__inner">
+    
+    <div class="logo">
+      <img src="images/sala.vazia.png" alt="SorrisoOdonto">
+      <span>SorrisoOdonto</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <h1>Cuidar do seu sorriso é cuidar da sua confiança</h1>
+      <p>
+        Atendimento odontológico completo com profissionais experientes,
+        tecnologia moderna e foco total no seu bem-estar.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contato.html" class="btn">Agendar Consulta</a>
+        <a href="servicos.html" class="btn btn--ghost">Ver Serviços</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/sala.vazia.png" alt="Clínica SorrisoOdonto">
+    </div>
+
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="social-proof">
+  <div class="container">
+    <div class="grid grid--cards">
+
+      <div class="card">
+        <img src="images/paciente.sorrindo.png" alt="Paciente sorrindo">
+        <p>“Nunca me senti tão segura em uma clínica odontológica.”</p>
+      </div>
+
+      <div class="card">
+        <img src="images/paciente.satisfeita.png" alt="Paciente satisfeita">
+        <p>“Atendimento humano, rápido e extremamente profissional.”</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="services">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+
+    <div class="grid grid--cards">
+
+      <div class="card">
+        <img src="images/clareamento.png" alt="Clareamento dental">
+        <h3>Clareamento Dental</h3>
+        <p>Mais brilho e naturalidade com total segurança.</p>
+        <a href="servicos.html" class="btn btn--small">Ver mais</a>
+      </div>
+
+      <div class="card">
+        <img src="images/aparelho.png" alt="Aparelho ortodôntico">
+        <h3>Aparelho Ortodôntico</h3>
+        <p>Correção do sorriso com acompanhamento especializado.</p>
+        <a href="servicos.html" class="btn btn--small">Ver mais</a>
+      </div>
+
+      <div class="card">
+        <img src="images/dentista.dentadura.png" alt="Dentadura">
+        <h3>Próteses e Dentaduras</h3>
+        <p>Conforto, estética e funcionalidade no dia a dia.</p>
+        <a href="servicos.html" class="btn btn--small">Ver mais</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="team">
+  <div class="container">
+    <h2>Nossa Equipe</h2>
+
+    <div class="team-highlight">
+      <img src="images/equipe.png" alt="Equipe SorrisoOdonto">
+      <p>
+        Profissionais qualificados, atualizados e comprometidos
+        com a sua saúde e seu sorriso.
+      </p>
+    </div>
+
+    <a href="sobre.html" class="btn btn--ghost">Conheça a equipe</a>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <div class="container cta-box">
+    <img src="images/recepcao.vazia.png" alt="Recepção da clínica">
+    <div>
+      <h2>Agende sua consulta agora</h2>
+      <p>Estamos prontos para cuidar do seu sorriso.</p>
+      <a href="contato.html" class="btn">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- WHATSAPP FIXO -->
+<a class="whatsapp-float"
+   href="https://wa.me/5545991002660?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+   target="_blank">
+  WhatsApp
+</a>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
