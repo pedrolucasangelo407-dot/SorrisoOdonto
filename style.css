@@ -1,0 +1,198 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --bg-dark: #0e0f13;
+  --bg-card: #161821;
+  --text-main: #eaeaea;
+  --text-muted: #b5b5b5;
+  --accent: #1e90ff;
+  --border: #232634;
+}
+
+/* BASE */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: var(--bg-dark);
+  border-bottom: 1px solid var(--border);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 40px;
+}
+
+/* NAV */
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--accent);
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-main);
+}
+
+/* HERO */
+.page-hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 0;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid--cards {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* CARD */
+.card {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.card p {
+  color: var(--text-muted);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  z-index: 1000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: var(--bg-card);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
